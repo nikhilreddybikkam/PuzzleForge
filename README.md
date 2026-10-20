@@ -224,3 +224,10 @@ This separation improves code organization, maintainability, and future extensib
 
 
 
+## Features
+
+- Interactive puzzle gameplay
+- Move tracking and scoring
+- Undo functionality
+- Solver algorithms
+
