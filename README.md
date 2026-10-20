@@ -103,3 +103,66 @@ PuzzleForge/
 
 - **Time Complexity:** $O(V + E)$ where $V \le 2^{N}$ states (for an $N$-cell board). On a $3 \times 3$ grid ($N=9$), $V \le 512$ states, allowing real-time path computation in $< 5\text{ms}$.
 - **Space Complexity:** $O(2^N)$ space for storing visited bitmask state distances in hash maps.
+
+
+
+---
+
+## ▶️ How to Run the Project
+
+### Prerequisites
+
+- Java Development Kit (JDK) 11 or higher
+- Visual Studio Code (VS Code) or any terminal
+- Git (to clone the repository)
+
+Verify Java installation:
+
+```bash
+java -version
+javac -version
+```
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/nikhilreddybikkam/PuzzleForge.git
+cd PuzzleForge
+```
+
+If you have already downloaded the project, open the `PuzzleForge` folder in VS Code.
+
+### 2. Compile the Java Source Files
+
+Open the terminal inside the project directory and run:
+
+**Windows PowerShell:**
+
+```powershell
+mkdir bin
+javac -d bin src/humvsai/*.java
+```
+
+If the `bin` directory already exists, you can reuse it.
+
+### 3. Run the Application
+
+```powershell
+java -cp bin humvsai.RealtimeUI
+```
+
+The Java Swing GUI should open if compilation succeeds.
+
+### 4. Troubleshooting
+
+| Error | Solution |
+|---|---|
+| `javac is not recognized` | Install a JDK and configure the Java PATH. |
+| `file not found` | Verify the source directory and Java filenames. |
+| `Could not find or load main class` | Check the package declaration and compiled class location. |
+| `Main method not found` | Ensure `RealtimeUI.java` contains a valid `public static void main(String[] args)` method. |
+| `cannot find symbol` | Check class names, imports, and dependencies. |
+
+**Note:** The commands above assume that the Java source files are located in `src/humvsai/` and that `RealtimeUI` is the main class.
+
+
